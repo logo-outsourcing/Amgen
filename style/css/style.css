@@ -1,0 +1,580 @@
+@font-face {
+  font-family: 'TT Commons Regular';
+  src: url('../../fonts/TTCommons-Regular.eot');
+  src: url('../../fonts/TTCommons-Regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/TTCommons-Regular.woff') format('woff'), url('../../fonts/TTCommons-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Commons Medium';
+  src: url('../../fonts/TTCommons-Medium.eot');
+  src: url('../../fonts/TTCommons-Medium.eot?#iefix') format('embedded-opentype'), url('../../fonts/TTCommons-Medium.woff') format('woff'), url('../../fonts/TTCommons-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Commons Bold';
+  src: url('../../fonts/TTCommons-Bold.eot');
+  src: url('../../fonts/TTCommons-Bold.eot?#iefix') format('embedded-opentype'), url('../../fonts/TTCommons-Bold.woff') format('woff'), url('../../fonts/TTCommons-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../../fonts/CircularStd-Book.woff') format('woff'), url('../../fonts/CircularStd-Book.woff2') format('woff'), url('../../fonts/CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std Medium';
+  src: url('../../fonts/CircularStd-Medium.woff') format('woff'), url('../../fonts/CircularStd-Medium.woff2') format('woff'), url('../../fonts/CircularStd-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.content {
+  width: 73%;
+  margin: 0 auto;
+}
+.content__background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.content__background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -2;
+  background: linear-gradient(180deg, #050B2B 0%, #050B2B 68.75%, #040308 100%);
+}
+.content__row {
+  display: flex;
+  flex-direction: row;
+}
+.content__button {
+  background: #1C88F8;
+  border-radius: 4px;
+  font-family: "TT Commons Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 23px 7px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.content__button--other {
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background: transparent;
+}
+.header {
+  width: 100%;
+  padding: 32px 0 63px;
+  box-sizing: border-box;
+  position: relative;
+}
+.header__box {
+  top: 0;
+  position: absolute;
+  background-image: url(../../img/bg.png);
+  z-index: -1;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.header__gradient {
+  width: 34%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, rgba(13, 0, 91, 0.8) 0%, rgba(12, 0, 83, 0) 100%);
+  opacity: 0.8;
+}
+.header__background {
+  width: 70%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.header__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: -webkit-gradient(linear, right center, left center, color-stop(0, #000), color-stop(0.35, #000), color-stop(0.5, #000), color-stop(0.55, #000), color-stop(1, rgba(0, 0, 0, 0)));
+}
+.header__heading {
+  justify-content: space-between;
+  width: 79.65%;
+  margin: 0 auto 198px;
+}
+.header__menu {
+  align-items: center;
+}
+.header__item {
+  margin-right: 21px;
+}
+.header__link {
+  font-family: "TT Commons Medium", sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-decoration: none;
+}
+.header__button {
+  border-color: #4325FF;
+  padding: 10px 15px 7px;
+}
+.header__content {
+  width: 50%;
+}
+.header__title {
+  font-family: "TT Commons Bold", sans-serif;
+  color: #FFFFFF;
+  font-size: 60px;
+  margin-bottom: 24px;
+  line-height: 89%;
+}
+.header__text {
+  font-family: "TT Commons Regular", sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 67%;
+  margin-bottom: 50px;
+  line-height: 120%;
+}
+.header__wrap {
+  margin-bottom: 102px;
+}
+.header__registration {
+  margin-right: 26px;
+}
+.header__partners {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.header__partners--link {
+  display: block;
+  margin-bottom: 20px;
+}
+.header__image--small {
+  width: 204px;
+}
+.header__image--big {
+  max-width: 140px;
+}
+.speakers {
+  padding: 100px 0;
+}
+.speakers__heading {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 78px;
+}
+.speakers__title {
+  font-family: "TT Commons Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+.speakers__slider {
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.speakers__content {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.speakers__info {
+  width: 73%;
+}
+.speakers__block {
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 47%;
+}
+.speakers__wrap {
+  width: 70%;
+}
+.speakers__name {
+  font-family: "TT Commons Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.speakers__subtitle {
+  font-family: "TT Commons Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+.speakers__text {
+  font-family: "TT Commons Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.speakers__text--inner {
+  font-size: 17px;
+  line-height: 20px;
+}
+.speakers__timer {
+  align-items: flex-start;
+}
+.speakers__time {
+  font-family: "TT Commons Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #E9E9E9;
+}
+.speakers__time--bold {
+  font-family: "TT Commons Bold", sans-serif;
+}
+.speakers__icon {
+  margin-right: 16px;
+}
+.speakers__button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.speakers__button:hover,
+.speakers__button:active,
+.speakers__button:focus {
+  outline: 0;
+}
+.speakers__prev {
+  position: absolute;
+  top: 33%;
+  left: -5%;
+}
+.speakers__next {
+  position: absolute;
+  top: 33%;
+  right: -5%;
+}
+.speakers__dots {
+  bottom: -62px;
+}
+.speakers__oncology--prev {
+  position: absolute;
+  top: 28%;
+  left: -5%;
+}
+.speakers__oncology--next {
+  position: absolute;
+  top: 28%;
+  right: -5%;
+}
+.speakers__oncology--dots {
+  bottom: -32px;
+}
+.speakers__photo {
+  width: 17.2%;
+}
+.speakers__hematology.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.speakers__oncology.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.speakers__dots li button:before {
+  color: #D8D8D8;
+  font-size: 16px;
+  opacity: 1;
+}
+.speakers__dots li.slick-active button:before {
+  color: #1C88F8;
+  opacity: 1;
+}
+.speakers__oncology--dots li button:before {
+  color: #D8D8D8;
+  font-size: 16px;
+  opacity: 1;
+}
+.speakers__oncology--dots li.slick-active button:before {
+  color: #1C88F8;
+  opacity: 1;
+}
+.tabs__nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+.tabs__link {
+  text-decoration: none;
+  flex-shrink: 0;
+  flex-grow: 1;
+  background: #FFFFFF;
+  border: 2px solid #1C88F8;
+  font-family: "TT Commons Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #1D293F;
+  padding: 17px 39px 12px;
+}
+.tabs__link--one {
+  border-radius: 10px 0 0 10px;
+}
+.tabs__link--two {
+  border-radius: 0 10px 10px 0;
+}
+.tabs__link_active {
+  background: #1C88F8;
+  color: #FFFFFF;
+}
+.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+  background-color: #efefef;
+}
+.tabs__pane {
+  display: none;
+  position: relative;
+}
+.tabs__pane_show {
+  display: block;
+}
+.program {
+  padding: 100px 0;
+  margin-bottom: 70px;
+}
+.program__heading {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 46px;
+}
+.program__wrap {
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+.program__button {
+  margin: 0 auto;
+  display: block;
+}
+.program__block {
+  width: 46%;
+}
+.program__line {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.program__line:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid #ECEFF4;
+  width: 100%;
+}
+.program__line--inner:after {
+  width: calc(100% + 18%);
+}
+.program__subtitle {
+  font-family: "TT Commons Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+}
+.program__subtitle:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #ECEFF4;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.program__subtitle--inner:after {
+  width: calc(100% + 18%);
+}
+.program__time {
+  font-family: "Circular Std Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.program__text {
+  font-family: "TT Commons Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 63%;
+  text-decoration: none;
+  line-height: 120%;
+}
+.program__text:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #1C88F8;
+}
+.program__hidden {
+  display: none;
+}
+.program__back {
+  font-family: "TT Commons Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  color: #B3B3B3;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.program__back:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #1C88F8;
+}
+.program__back--icon {
+  margin: 0 8px 0 16px;
+}
+.program__theme {
+  font-family: "TT Commons Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+.program__name {
+  font-family: "Circular Std Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: right;
+  color: #FFFFFF;
+}
+.program__border {
+  padding: 40px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ECEFF4;
+}
+.footer {
+  position: relative;
+}
+.footer:before {
+  content: url("../../img/planeta.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.footer__content {
+  margin-bottom: 50px;
+}
+.footer__logo {
+  margin-top: 14px;
+  margin-right: 60px;
+}
+.footer__block {
+  width: 24%;
+}
+.footer__text {
+  font-family: 'Circular Std Book', sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8C97AC;
+  margin-bottom: 33px;
+}
+.footer__wrap {
+  width: 100%;
+  justify-content: space-between;
+  padding: 21px 0;
+  border-top: 1px solid #313D55;
+}
+.footer__info {
+  font-family: 'Circular Std Book', sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 13px;
+  line-height: 28px;
+  color: #8C97AC;
+}
+.footer__item {
+  margin-right: 18px;
+}
+@media screen and (max-width: 1510px) {
+  .header__text {
+    width: 72%;
+  }
+  .footer__block {
+    width: 28%;
+  }
+  .header__image--big {
+    max-width: 100px;
+  }
+  .header__image--small {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .header__content {
+    width: 70%;
+  }
+  .tabs__link {
+    padding: 3% 7% 2%;
+  }
+  .program__text {
+    width: 56%;
+  }
+  .footer__block {
+    width: 40%;
+  }
+  .speakers__info {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .header__content {
+    width: 100%;
+  }
+  .header__heading {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
