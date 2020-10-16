@@ -69,10 +69,19 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+.content__button:hover {
+  color: #1C88F8;
+  background: #FFFFFF;
+  transition: 0.6s;
+}
 .content__button--other {
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   background: transparent;
+}
+.content__button--other:hover {
+  border-color: #4325FF;
+  transition: 0.6s;
 }
 .header {
   width: 100%;
@@ -354,6 +363,7 @@
 .tabs__link_active {
   background: #1C88F8;
   color: #FFFFFF;
+  transition: 1s;
 }
 .tabs__link:not(.tabs__link_active):hover,
 .tabs__link:not(.tabs__link_active):focus {
@@ -362,9 +372,28 @@
 .tabs__pane {
   display: none;
   position: relative;
+  animation-name: open;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 .tabs__pane_show {
   display: block;
+}
+@keyframes open {
+  0% {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 .program {
   padding: 100px 0;

@@ -87,11 +87,20 @@
     padding: 10px 23px 7px;
     box-sizing: border-box;
     cursor: pointer;
+    &:hover{
+      color: #1C88F8;
+      background: #FFFFFF;
+      transition: 0.6s;
+    }
 
     &--other {
       border: 1px solid #FFFFFF;
       border-radius: 4px;
       background: transparent;
+      &:hover{
+        border-color: #4325FF;
+        transition: 0.6s;
+      }
     }
   }
 }
@@ -101,12 +110,15 @@
   padding: 32px 0 63px;
   box-sizing: border-box;
   position: relative;
-&__logo{
-  display: block;
-  &--icon{
-    width: 100%;
+
+  &__logo {
+    display: block;
+
+    &--icon {
+      width: 100%;
+    }
   }
-}
+
   &__box {
     top: 0;
     position: absolute;
@@ -441,6 +453,7 @@
 .tabs__link_active {
   background: #1C88F8;
   color: #FFFFFF;
+  transition: 1s;
 }
 
 .tabs__link:not(.tabs__link_active):hover,
@@ -452,10 +465,30 @@
 .tabs__pane {
   display: none;
   position: relative;
+  animation-name: open;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 
 .tabs__pane_show {
   display: block;
+}
+
+@keyframes open {
+  0% {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .program {
@@ -700,149 +733,188 @@
   .header__heading {
     width: 92%;
   }
+
   .content {
     width: 90%;
     margin: 0 auto;
   }
+
   .program__block {
     width: 49%;
   }
-  .tabs{
+
+  .tabs {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 768px) {
 
-  .program__wrap{
+  .program__wrap {
     display: none;
   }
-  .program__mobile{
+
+  .program__mobile {
     display: block;
     margin-bottom: 88px;
   }
+
   .speakers__content {
     flex-direction: column;
     margin-bottom: 25px;
   }
+
   .speakers__block {
     width: 100%;
     margin-bottom: 10px;
   }
+
   .speakers__wrap {
     width: 80%;
   }
+
   .speakers .content .speakers__button {
     display: none;
   }
+
   .header__logo {
     width: 23%;
   }
+
   .header__link {
     font-size: 17px;
   }
+
   .content__button {
     font-size: 17px;
   }
-  .header__button{
+
+  .header__button {
     padding: 3% 9% 2%;
   }
-  .tabs{
+
+  .tabs {
     width: 100%;
   }
+
   .program__heading {
     flex-direction: column;
   }
+
   .speakers__title {
     text-align: center;
     margin-bottom: 20px;
   }
+
   .speakers__heading {
     flex-direction: column;
     margin-bottom: 78px;
-      font-size: 48px;
-      line-height: 50px;
+    font-size: 48px;
+    line-height: 50px;
   }
 }
-@media screen and(max-width: 568px){
+
+@media screen and(max-width: 568px) {
   .program__time {
     font-size: 20px;
   }
+
   .speakers__slider {
     flex-direction: column;
     width: 100%;
   }
+
   .speakers__photo {
     width: 100%;
     margin-bottom: 30px;
   }
+
   .speakers__info {
     width: 100%;
   }
+
   .header__heading {
     flex-direction: column;
     margin: 0 auto 90px;
   }
+
   .header__logo {
     width: 60%;
     margin-bottom: 10px;
   }
+
   .header__link {
     font-size: 14px;
   }
+
   .header__item {
     margin-right: 10px;
   }
+
   .header__title {
     font-size: 43px;
   }
+
   .header__text {
     width: 100%;
   }
+
   .header__registration {
     margin-right: 10px;
   }
+
   .header__wrap {
     justify-content: space-between;
     width: 100%;
   }
+
   .content__button {
     padding: 10px 20px 7px;
   }
+
   .header__button {
     padding: 3% 9% 2%;
   }
+
   .speakers__title {
     font-size: 35px;
     line-height: 120%;
   }
+
   .speakers__block {
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
   }
+
   .speakers__wrap {
     width: 100%;
   }
-  .speakers__name, .speakers__subtitle , .speakers__text {
+
+  .speakers__name, .speakers__subtitle, .speakers__text {
     text-align: center;
   }
+
   .footer__content {
- flex-direction: column;
+    flex-direction: column;
     align-items: center;
   }
+
   .footer__block {
     width: 100%;
     text-align: center;
   }
+
   .footer__logo {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 15px;
   }
+
   .footer__wrap {
     flex-direction: column;
     align-items: center;
   }
+
   .footer__info {
     margin-bottom: 15px;
   }
