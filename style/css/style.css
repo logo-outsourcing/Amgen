@@ -405,9 +405,6 @@
   width: 100%;
   margin-bottom: 46px;
 }
-.program__wrap {
-  margin-bottom: 88px;
-}
 .program__button {
   margin: 0 auto;
   display: block;
@@ -444,6 +441,10 @@
   position: relative;
   padding: 20px 0;
   width: 50%;
+}
+.program__subtitle--span {
+  width: 85%;
+  display: block;
 }
 .program__time {
   font-family: "Circular Std Medium", sans-serif;
@@ -616,7 +617,6 @@
   }
   .program__mobile {
     display: block;
-    margin-bottom: 88px;
   }
   .speakers__content {
     flex-direction: column;
