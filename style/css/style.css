@@ -68,6 +68,7 @@
   padding: 10px 23px 7px;
   box-sizing: border-box;
   cursor: pointer;
+  text-decoration: none;
 }
 .content__button:hover {
   color: #1C88F8;
@@ -465,11 +466,6 @@
   text-decoration: none;
   line-height: 120%;
 }
-.program__text:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #1C88F8;
-}
 .program__hidden {
   display: none;
 }
@@ -515,6 +511,12 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ECEFF4;
+}
+.js-oncology:hover,
+.js-hematology:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #1C88F8;
 }
 .footer {
   position: relative;
@@ -592,6 +594,10 @@
   .speakers__info {
     width: 80%;
   }
+  .program__theme {
+    width: 52%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 990px) {
   .header__content {
@@ -659,6 +665,14 @@
     margin-bottom: 78px;
     font-size: 48px;
     line-height: 50px;
+  }
+  .program__name,
+  .program__time {
+    font-size: 18px;
+  }
+  .program__theme {
+    font-size: 18px;
+    line-height: 130%;
   }
 }
 @media screen and (max-width: 568px) {
@@ -744,5 +758,13 @@
   }
   .footer__info {
     margin-bottom: 15px;
+  }
+  .program__theme {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .program__border {
+    flex-direction: column;
   }
 }
