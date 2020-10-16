@@ -497,6 +497,9 @@
   line-height: 40px;
   color: #FFFFFF;
 }
+.program__theme__inner {
+  width: 67%;
+}
 .program__name {
   font-family: "Circular Std Medium", sans-serif;
   font-style: normal;
@@ -511,6 +514,10 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ECEFF4;
+}
+.js-oncology,
+.js-hematology {
+  text-decoration: underline;
 }
 .js-oncology:hover,
 .js-hematology:hover {
