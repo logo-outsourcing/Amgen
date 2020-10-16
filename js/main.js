@@ -11,6 +11,14 @@ $(document).ready(function () {
         prevArrow: ".speakers__prev",
         nextArrow: ".speakers__next",
         centerMode: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 
 
@@ -26,6 +34,14 @@ $('#slider2').click(function () {
         dotsClass: ' slick-dots speakers__oncology--dots',
         prevArrow: ".speakers__oncology--prev",
         nextArrow: ".speakers__oncology--next",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 })
 $(function () {

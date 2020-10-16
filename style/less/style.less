@@ -101,7 +101,12 @@
   padding: 32px 0 63px;
   box-sizing: border-box;
   position: relative;
-
+&__logo{
+  display: block;
+  &--icon{
+    width: 100%;
+  }
+}
   &__box {
     top: 0;
     position: absolute;
@@ -143,6 +148,7 @@
     justify-content: space-between;
     width: 79.65%;
     margin: 0 auto 198px;
+    align-items: center;
   }
 
   &__menu {
@@ -365,10 +371,12 @@
       bottom: -32px;
     }
   }
-  &__photo{
+
+  &__photo {
     width: 17.2%;
   }
 }
+
 .speakers__hematology.slick-dotted.slick-slider {
   margin-bottom: 0;
 }
@@ -462,7 +470,6 @@
   }
 
   &__wrap {
-    justify-content: space-between;
     margin-bottom: 88px;
   }
 
@@ -473,6 +480,8 @@
 
   &__block {
     width: 46%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__line {
@@ -488,10 +497,10 @@
       border-bottom: 1px solid #ECEFF4;
       width: 100%;
     }
+  }
 
-    &--inner:after {
-      width: calc(100% + 18%);
-    }
+  &__mobile {
+    display: none;
   }
 
   &__subtitle {
@@ -504,19 +513,7 @@
     text-align: center;
     position: relative;
     padding: 20px 0;
-
-    &:after {
-      content: "";
-      position: absolute;
-      border-bottom: 1px solid #ECEFF4;
-      bottom: 0;
-      width: 100%;
-      left: 0;
-    }
-
-    &--inner:after {
-      width: calc(100% + 18%);
-    }
+    width: 50%;
 
   }
 
@@ -659,43 +656,194 @@
   .header__text {
     width: 72%;
   }
+
   .footer__block {
     width: 28%;
   }
+
   .header__image--big {
     max-width: 100px;
   }
+
   .header__image--small {
     width: 170px;
   }
 }
-@media screen and (max-width: 1440px){
+
+@media screen and (max-width: 1440px) {
   .header__content {
     width: 70%;
   }
+
   .tabs__link {
     padding: 3% 7% 2%;
   }
+
   .program__text {
     width: 56%;
   }
+
   .footer__block {
     width: 40%;
   }
+
   .speakers__info {
     width: 80%;
   }
 }
-@media screen and(max-width: 990px){
+
+@media screen and(max-width: 990px) {
   .header__content {
     width: 100%;
   }
+
   .header__heading {
     width: 92%;
   }
-}
-@media screen and (max-width: 768px){
   .content {
     width: 90%;
+    margin: 0 auto;
+  }
+  .program__block {
+    width: 49%;
+  }
+  .tabs{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .program__wrap{
+    display: none;
+  }
+  .program__mobile{
+    display: block;
+    margin-bottom: 88px;
+  }
+  .speakers__content {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .speakers__block {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .speakers__wrap {
+    width: 80%;
+  }
+  .speakers .content .speakers__button {
+    display: none;
+  }
+  .header__logo {
+    width: 23%;
+  }
+  .header__link {
+    font-size: 17px;
+  }
+  .content__button {
+    font-size: 17px;
+  }
+  .header__button{
+    padding: 3% 9% 2%;
+  }
+  .tabs{
+    width: 100%;
+  }
+  .program__heading {
+    flex-direction: column;
+  }
+  .speakers__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .speakers__heading {
+    flex-direction: column;
+    margin-bottom: 78px;
+      font-size: 48px;
+      line-height: 50px;
+  }
+}
+@media screen and(max-width: 568px){
+  .program__time {
+    font-size: 20px;
+  }
+  .speakers__slider {
+    flex-direction: column;
+    width: 100%;
+  }
+  .speakers__photo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .speakers__info {
+    width: 100%;
+  }
+  .header__heading {
+    flex-direction: column;
+    margin: 0 auto 90px;
+  }
+  .header__logo {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  .header__link {
+    font-size: 14px;
+  }
+  .header__item {
+    margin-right: 10px;
+  }
+  .header__title {
+    font-size: 43px;
+  }
+  .header__text {
+    width: 100%;
+  }
+  .header__registration {
+    margin-right: 10px;
+  }
+  .header__wrap {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content__button {
+    padding: 10px 20px 7px;
+  }
+  .header__button {
+    padding: 3% 9% 2%;
+  }
+  .speakers__title {
+    font-size: 35px;
+    line-height: 120%;
+  }
+  .speakers__block {
+   flex-direction: column;
+    align-items: center;
+  }
+  .speakers__wrap {
+    width: 100%;
+  }
+  .speakers__name, .speakers__subtitle , .speakers__text {
+    text-align: center;
+  }
+  .footer__content {
+ flex-direction: column;
+    align-items: center;
+  }
+  .footer__block {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__logo {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .footer__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__info {
+    margin-bottom: 15px;
   }
 }
