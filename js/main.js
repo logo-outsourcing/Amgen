@@ -50,33 +50,29 @@ $('#slider2').click(function () {
 })
 $(function () {
 
-    var $button = $('.js-hematology'),
         $container = $('.js-container');
 
-    $button.on('click', function (e) {
+    $('.js-hematology').on('click', function (e) {
         e.preventDefault();
-        var toggleText = $(this).data('toggle-text');
-
-        $(this).data('toggle-text', $(this).text())
-            .text(toggleText);
-
-        $container.toggleClass('program__hidden');
+        $('.js-container').removeClass('program__hidden');
         $('.js-one').addClass('program__hidden');
+        $('.js-content1').removeClass('tabs__pane_show');
+        $('.js-content2').addClass('tabs__pane_show');
+        $('.js-link1').removeClass('tabs__link_active');
+        $('.js-link2').addClass('tabs__link_active');
+
     });
     $(".js-oncology").on('click', function (e) {
         e.preventDefault();
-        var toggleText = $(this).data('toggle-text');
 
-        $(this).data('toggle-text', $(this).text())
-            .text(toggleText);
-
-        $container.toggleClass('program__hidden');
+        $('.js-container').removeClass('program__hidden');
         $('.js-one').addClass('program__hidden');
-        $('.js-link1').removeClass('tabs__link_active');
-        $('.js-link2').addClass('tabs__link_active');
-        $('.js-content1').removeClass('tabs__pane_show');
-        $('.js-content2').addClass('tabs__pane_show');
+        $('.js-link2').removeClass('tabs__link_active');
+        $('.js-link1').addClass('tabs__link_active');
+        $('.js-content2').removeClass('tabs__pane_show');
+        $('.js-content1').addClass('tabs__pane_show');
     });
+
     $(".program__back").on('click', function (e) {
         e.preventDefault();
         $container.toggleClass('program__hidden');
